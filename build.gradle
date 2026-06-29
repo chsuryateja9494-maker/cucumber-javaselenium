@@ -13,11 +13,15 @@ dependencies {
     // Cucumber Java and JUnit Platform Engine Engine
     testImplementation 'io.cucumber:cucumber-java:7.15.0'
     testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.15.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.0'
 
     // JUnit 5 Platform Suite (Required to orchestrate the test runner)
     testImplementation 'org.junit.platform:junit-platform-suite:1.10.1'
     implementation("io.github.bonigarcia:webdrivermanager:6.3.4")
     implementation("org.seleniumhq.selenium:selenium-java:4.45.0")
+    implementation("org.apache.poi:poi:5.5.1")
+    // Source: https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation("org.apache.poi:poi-ooxml:5.5.1")
 }
 
 test {
