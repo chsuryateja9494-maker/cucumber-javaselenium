@@ -1,5 +1,7 @@
 package com.cucumberscript;
 
+import io.cucumber.junit.platform.engine.Constants;
+import org.junit.jupiter.api.Tag;
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;
@@ -16,6 +18,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PUBLISH_ENABLED
 //html is for reports in html format
 @ConfigurationParameter(key = PLUGIN_PUBLISH_ENABLED_PROPERTY_NAME, value = "true")
 //Cucumber report is published online , above "PLUGIN_PUBLISH_ENABLED_PROPERTY_NAME" is used instead of "publish = true"
+//@ConfigurationParameter( key = Constants.GLUE_PROPERTY_NAME, value = "com.example.stepdefinitions") // Path to step definitions
+@ConfigurationParameter( key = Constants.FILTER_TAGS_PROPERTY_NAME, value = "@smoke1") // Your tag expression here
+
 
 public class TestRunner {  //this don't have methods as annotations will take care of all
 

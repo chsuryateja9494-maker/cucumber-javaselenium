@@ -1,0 +1,40 @@
+Creating cucumber framework from scratch:
+First go to Intellij
+Then create a project with Gradle(Select any other build tool if required)
+Set Java version if present
+Click on Apply
+Add the plugins by going to settings
+Add the dependecies in build.gradle in Cucumber, Junit, Selenium, Junit jupiter for assertions from maven website - https://mvnrepository.com/
+cucumber = Cucumber JVM: Java
+Junit - Junit platform or Junit 5, JUnit Jupiter (Aggregator)
+Selenium - Selenium Java
+Webdriver Manager - WebDriverManager(Not github icon one)
+
+Create a feature file in resources - by adding .feature in the file, the feature file will be created. The feature file shjould be green in color after creation
+Now start POJO, create a package at java directory of "com.cucumberscript"
+Inside that create a TestRunner class
+Create packages for different purposes Pages, step definitions, utilities
+Give all the annotations and don't add any methods in the class as annotations will take care
+Create LoginStepdefs class
+Now mouse hoverover, click on more actions or create step definition for all. After give  path "LoginStepdefs"
+Methods should have created
+create "GetBrowserDriver" for the drivers details and to call them
+Now to create the implemented methods, create the base classes
+Write the initialization methods and closing methods
+Create Hooks in setdefs package and call those base methods. Apply annotations.
+In the base class, write the methods for Initialzation of driver and closing methods
+Create config folder and add required properties files as application.properties, framework.properties etc.,
+Enter the details to avoid hardcoding like URL, Username, pswds
+Create a "login page" class and add webelements, methods
+call parameter values from properties and use page factor here
+Call those methods and in the step defs class
+Now execute the script from Test runner
+
+
+
+
+
+
+
+
+
